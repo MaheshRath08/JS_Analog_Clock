@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+.container::after{
+    content: "";
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    background-color: #555;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.number{
+    --rt:0;
+    position: absolute;
+    font-size: 1.5rem;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transform: rotate(var(--rt));
+}
+.hour, .min, .sec{
+    position: absolute;
+    opacity: 0.9;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+.hour{
+    height: 35%;
+    width: 4%;
+    background-color: brown;
+    top: 14%;
+    left: 48%;
+}
+.min{
+    height: 40%;
+    width: 2.7%;
+    background-color:navy;
+    top: 10%;
+    left: 48.5%;
+}
+.sec{
+    height: 45%;
+    width: 1.5%;
+    background-color: greenyellow;
+    top: 5%;
+    left: 49.1%;
+}
+
+
+.n1{
+    --rt:30deg;
+}
+.n2{
+    --rt:60deg;
+}
+.n3{
+    --rt:90deg;
+}
+.n4{
+    --rt:120deg;
+}
+.n5{
+    --rt:150deg;
+}
+.n6{
+    --rt:180deg;
+}
+.n7{
+    --rt:210deg;
+}
+.n8{
+    --rt:240deg;
+}
+.n9{
+    --rt:270deg;
+}
+.n10{
+    --rt:300deg;
+}
+.n11{
+    --rt:330deg;
+}
